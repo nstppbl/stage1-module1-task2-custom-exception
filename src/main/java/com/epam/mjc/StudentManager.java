@@ -9,7 +9,7 @@ public class StudentManager {
     if (studentID > 0 && studentID < 11) {
       return Student.getValueOf(studentID);
     } else {
-      throw new MyNewException("Could not find student with ID" + studentID);
+      throw new MyNewException(studentID);
     }
 
   }
